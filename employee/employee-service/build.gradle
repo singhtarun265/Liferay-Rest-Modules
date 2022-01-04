@@ -1,0 +1,12 @@
+dependencies {
+	compile project(":modules:employee:employee-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.dao.orm.custom.sql.api", version: "1.0.0"
+}
+
+buildService {
+	apiDir = "../employee-api/src/main/java"
+}
+
+group = "com.liferay.training.employee"
